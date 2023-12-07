@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@test/dip": ["libs/dependency-inversion-principal/src/index.ts"],
+      "@test/isp": ["libs/interface-segregation-principal/src/index.ts"],
+      "@test/lsp": ["libs/liskov-substitution-principle/src/index.ts"],
+      "@test/ocp": ["libs/open-closed-principal/src/index.ts"],
+      "@test/srp": ["libs/single-responsibility-pattern/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
