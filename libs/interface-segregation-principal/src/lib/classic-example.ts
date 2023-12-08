@@ -5,6 +5,16 @@ interface Animal {
   fly(): void;
 }
 
+class Duck implements Animal {
+  walk() {
+    console.log('Walking');
+  }
+
+  fly() {
+    console.log('Flying');
+  }
+}
+
 class Dog implements Animal {
   walk() {
     console.log('Walking');
@@ -15,15 +25,15 @@ class Dog implements Animal {
   }
 }
 
-class Duck implements Animal {
-  walk() {
-    console.log('Walking');
-  }
-
-  fly() {
-    console.log('Flying');
-  }
-}
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 // solution
 // ==================
@@ -50,3 +60,5 @@ class Duck implements AnimalCanWalk, AnimalCanFly {
     console.log('Flying');
   }
 }
+
+// another good example is how angular do it for OnInit, AfterViewInit
